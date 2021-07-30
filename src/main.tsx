@@ -1,8 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Study from "./pages/Study"
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/study' exact component={Study} />
         <Redirect to="/" />
       </Switch>
+      <Footer />
     </Router>
   );
 }
