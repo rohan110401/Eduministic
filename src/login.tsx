@@ -32,7 +32,7 @@ const Login: React.FC<Props> = (props) => {
                 <div className="btnContainer">
                     {hasAccount ? (
                         <>
-                            <button onClick={handleSignup}>Sign In</button>
+                            <button onClick={handleSignup}>Sign Up</button>
                             <p>Have an account ?{" "}
                                 <span onClick={() => setHasAccount(!hasAccount)}>Sign In</span></p>
                         </>
